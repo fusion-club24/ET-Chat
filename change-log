@@ -1,0 +1,26 @@
+root/etchat
+- veralte php funktion befehle 
+_autoload wurde ab php 7.3 ende des PHP Update entfernt und musste geändert werden.
+_myclassloader geht nur bis php 8.0 ende  PHP 8.1 Update entfernt und musste geändert werden. 
+index.php  wurde angepasst an php 8.2
+Zusatztool_Anbindung_an_Fremduserverwaltung.php wurde angepasst an php 8.2 
+Zusatztool_ExtreneAnzeige_Interface.php wurde angepasst an php 8.2
+
+etchat/class
+
+- XMLParser.class.php 
++ musste dateiname geändert werden ETParser 
++ diese datei auch die class XMLParser funktion geändert werden
+
+cockies befehle musste was hinzugefügt werden für php 8.0 funktionieren. 
+
+
+jede class nach gehen da wo new XMLParser war auf ETParser ändern 
+
+- Blacklist.class.php an php 8.0 anpassen
+- ReloaderMessages.class.php  an php 8.0 angepasst werden.
+- ReloaderMessages.class.php  an php 8.0 angepasst werden
+- UserCheckerAndInserter.class.php  an php 8.0 angepasst werden {} auf [] geändert werden bei insert int und update befehl
+
+
+
