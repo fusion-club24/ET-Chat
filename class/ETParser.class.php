@@ -66,7 +66,7 @@ class ETParser
      * Constructor. Loads XML document.
      *
      * @param string $xml The string of the XML document
-     * @return AAFParser
+     * @return ETParser
      */
     function __construct($xml = '', $cleanTagNames = true)
     {
