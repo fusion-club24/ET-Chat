@@ -37,10 +37,16 @@ $_SESSION['etchat_db1_logout_url']="http://www.Ihre_Webseite.de/aus_dem_chat_aus
 ##############################################################
 # DO NOT EDIT BELOW ###############################################
 ##############################################################
+// register the loader functions php 8.2 fix 21Matze
+spl_autoload_register(function($class_name) {
+require_once ('class/'.$class_name.'.class.php');		
+});
+
+
 // bis php 7.3 version __autoload
-function __autoload($class_name) {
+/*function __autoload($class_name) {
 		require_once ('class/'.$class_name.'.class.php');		
-}
+}*/
 
 // initialise
 new CheckUserName(true, $username, $gender);

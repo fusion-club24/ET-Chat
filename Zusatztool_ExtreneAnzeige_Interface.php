@@ -2,12 +2,19 @@
 
 // like $GLOBALS["path"] = "./et_chat_v3.06/";
 $GLOBALS["path"] = "./";
-// bis php 7.3 nur __autoload
-function autoload($class_name) {
+
+// register the loader functions php 8.2 fix 21Matze
+spl_autoload_register(function($class_name) {
 		require_once ($GLOBALS["path"].'class/'.$class_name.'.class.php');		
-}
+});
+
+
 // bis php 7.3 nur __autoload
-spl_autoload_register('autoload');
+/*function autoload($class_name) {
+		require_once ($GLOBALS["path"].'class/'.$class_name.'.class.php');		
+}*/
+// bis php 7.3 nur __autoload
+/*spl_autoload_register('autoload');*/
 
 class ExternUserView extends DbConectionMaker
 {
