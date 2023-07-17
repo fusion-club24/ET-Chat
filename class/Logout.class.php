@@ -1,7 +1,7 @@
 <?php
 /**
  * Logout, class to logout any user
- *
+ * 8.2 fix undefinet key random user nummer 21Matze
  * LICENSE: CREATIVE COMMONS PUBLIC LICENSE  "Namensnennung — Nicht-kommerziell 2.0"
  *
  * @copyright  2009 <SEDesign />
@@ -32,7 +32,7 @@ class Logout extends DbConectionMaker
 		
 		
 		// Realy an user action?
-		if($_SESSION['etchat_'.$this->_prefix.'random_user_number'] != $_GET['random_user_number'])
+		if($_SESSION['etchat_'.$this->_prefix.'random_user_number'] != isset($_GET['random_user_number']))
 			return false;
 			
 		// create new LangXml Object
