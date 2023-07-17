@@ -27,6 +27,8 @@ jede class nach gehen da wo new XMLParser war auf ETParser ändern
 - et_chat/class/admin 
   AdminPropertyIndex.class an php 8.0 angepasst werden
 - UserCheckerAndInserter.class.php  an php 8.0 angepasst werden {} auf [] geändert werden bei insert int und update befehl
+php 8.2
+lockout class undefiniert user radom nummer da hat isset gefehlt zeile 35  
 
 
 
